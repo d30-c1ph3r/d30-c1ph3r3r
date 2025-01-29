@@ -1,0 +1,211 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.hint {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.hidden {
+  opacity: 0;
+  height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+#warning h1 {
+  margin: 15px 15px;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+}
+
+#warning h2 {
+  margin: 10px 15px;
+  color: #777;
+  font-size: 22px;
+  text-align: center;
+}
+
+#warning p {
+  margin: 5px 15px;
+  color: #777;
+  font-size: 14px;
+  text-align: left;
+}
+
+#warning #checkboxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#warning #checkboxes .my-checkbox-wrapper {
+  display: flex;
+  align-items: top;
+  column-gap: 5px;
+}
+
+#warning #checkboxes .my-checkbox-wrapper span {
+  line-height: 20px;
+  color: #666;
+}
+
+#warning a {
+  color: #000;
+  font-weight: 500;
+}
+
+#warning #hint-1 > .my-checkbox-wrapper {
+  margin-top: 10px;
+}
+
+#warning #hint-2 > div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#decipherer h1 {
+  margin: 15px 15px;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+}
+
+#decipherer .contents {
+  padding: 0 15px;
+}
+
+#decipher .contents .input-container,
+#decipher .contents .output-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#decipherer .contents textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#decipherer .contents .step {
+  margin-top: 5px;
+}
+
+#decipherer .contents .button-container {
+  margin-top: 5px;
+}
+
+#decipherer .contents .output-container {
+  margin-top: 5px;
+}
+
+.checkbox-wrapper-2 .ikxBAC {
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+}
+
+.checkbox-wrapper-2 .ikxBAC::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.checkbox-wrapper-2 .ikxBAC,
+.checkbox-wrapper-2 .ikxBAC::after {
+  transition: all 100ms ease-out;
+}
+
+.checkbox-wrapper-2 .ikxBAC::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.checkbox-wrapper-2 input[type="checkbox"] {
+  cursor: default;
+}
+
+.checkbox-wrapper-2 .ikxBAC:hover {
+  background-color: #c9cbcd;
+  transition-duration: 0s;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked {
+  background-color: #eeee00;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked::after {
+  background-color: #fff;
+  left: 13px;
+}
+
+.checkbox-wrapper-2 :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.checkbox-wrapper-2 .ikxBAC:checked:hover {
+  background-color: #eeee77;
+}
+
+.button-2 {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
